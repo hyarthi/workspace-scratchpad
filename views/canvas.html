@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Watson Workspace ScratchPad</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<link rel="stylesheet" href="/style/style.css" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="https://d3js.org/d3.v4.js"></script>
+		<!--<script type="text/javascript" src="/scripts/scratchpad.js"></script>-->
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<base href="/">
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "banner">
+				<img class="newappIcon" src="/images/newapp-icon.png">
+				<p class = "appTitle">
+					Watson Workspace ScratchPad
+				</p>
+			</div>
+			<section>
+				<app-root>
+					<img id="ww_sp_loading_img" src="/images/loading.gif"></img>
+				</app-root>
+				<!--<div id="wwScratchpadCanvas" class="scratchpad_canvas" style="width:100%;height:100%">
+				</div>-->
+			</section>
+			<footer>
+				<div id="errorDiv" class='errorMsg'></div>
+			</footer>
+		</div>
+		<!-- Launch App -->
+		<script type="text/javascript" src="/scripts/app/inline.bundle.js"></script>
+		<script type="text/javascript" src="/scripts/app/polyfills.bundle.js"></script>
+		<script type="text/javascript" src="/scripts/app/styles.bundle.js"></script>
+		<script type="text/javascript" src="/scripts/app/vendor.bundle.js"></script>
+		<script type="text/javascript" src="/scripts/app/main.bundle.js"></script>
+	</body>
+</html>

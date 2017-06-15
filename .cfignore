@@ -1,2 +1,6 @@
-node_modules
+node_modules/
 vcap-local.json
+internal/
+hyarthi-scratchpad_vcap.json
+hyarthi-scratchpad_envvar.json
+certs/
