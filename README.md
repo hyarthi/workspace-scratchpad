@@ -6,7 +6,7 @@ The app runs locally and caches data from an available workspace.
 
 In order to get access to the workspace, an application key needs to be issued from the Watson Work [developer dashboard][] and fed into the app.
 
-App requires local instance of CouchDB or BlueMix Cloudant instance.
+App requires local instance of CouchDB or BlueMix Cloudant instance. 
 
 Runs on a local instance of Node.js, but can also run in BlueMix Node.js runtime (in theory).
 
