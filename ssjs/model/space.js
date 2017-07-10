@@ -48,9 +48,4 @@ Space.getDefault = function (name) {
 	}
 };
 
-<<<<<<< HEAD
-=======
-Space.getMember = function(id)
-
->>>>>>> origin/master
 module.exports = Space;

@@ -14,7 +14,6 @@ var api = {
 		url: "/api/space",
 		functions: {
 			init: "/api/space/:id/init",
-<<<<<<< HEAD
 			moments: "/api/space/:id/moments",
 			messages: "/api/space/:id/messages"
 		},
@@ -409,14 +408,6 @@ var api = {
 };
 
 let API_DEFAULTS = {
-=======
-		},
-		activeSpaces: [],
-	},
-};
-
-var API_DEFAULTS = {
->>>>>>> origin/master
 	SPACE: {
 		STATUS_OFF: 0,
 		STATUS_LOADING: 1,
@@ -426,11 +417,7 @@ var API_DEFAULTS = {
 	},
 };
 
-<<<<<<< HEAD
 /*api.space.init = function(request, response) {
-=======
-api.space.init = function(request, response) {
->>>>>>> origin/master
 	console.log('>>> started initializing the space data');
 	console.log('>>> checking if authenticated');
 	console.log('>>>> params: ' + JSON.stringify(request.params));
@@ -470,11 +457,7 @@ api.space.init = function(request, response) {
 				//
 				response.status(200);
 				response.setHeader('Content-Type', 'application/json');
-<<<<<<< HEAD
 				response.write(JSON.stringify(api.space.activeSpaces[request.params.id]));
-=======
-				response.write('{"status" : "loading"}');
->>>>>>> origin/master
 				response.end();
 			} else {
 				console.log('FOUND LOCAL CONVO!!!');
@@ -483,18 +466,13 @@ api.space.init = function(request, response) {
 				api.space.activeSpaces[request.params.id] = convo;
 				response.status(200);
 				response.setHeader('Content-Type', 'application/json');
-<<<<<<< HEAD
 				response.write(JSON.stringify(convo));
-=======
-				response.write('{"status" : "loaded"}');
->>>>>>> origin/master
 				response.end();
 			}
 		});
 	});
 };
 
-<<<<<<< HEAD
 api.space.get = function(request, response) {
 	console.log('processing space GET...');
 	let spc = api.space.activeSpaces[request.params.id];
@@ -514,8 +492,6 @@ api.space.get = function(request, response) {
 	}
 }
 
-=======
->>>>>>> origin/master
 api.space._loadSpaceIntoCoach = function(id) {
 	// async do in the background
 	return new Promise((resolve, reject) => {
@@ -757,7 +733,6 @@ api.space._loadNextUsers = function(spaceId, startCursor) {
 		});
 };
 
-<<<<<<< HEAD
 api.space.annotations.get = function(request, response) {
 	let spaceId = request.params.spaceId;
 	let skip = +request.params.start;
@@ -777,6 +752,4 @@ api.space.annotations.get = function(request, response) {
 	});
 }*/
 
-=======
->>>>>>> origin/master
 module.exports = api;

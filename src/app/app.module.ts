@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
 //import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
@@ -36,19 +35,5 @@ import { ErrorComponent } from './error.component';
 	],
 	providers: [ APIService ],
 	bootstrap: [ AppComponent ]
-=======
-
-import { AppComponent } from './app.component';
-
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
->>>>>>> origin/master
 })
 export class AppModule { }

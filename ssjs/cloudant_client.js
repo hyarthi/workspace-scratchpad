@@ -2,13 +2,13 @@ var fs = require('fs'),
     Promise = require('promise');
 
 var cloudant_client = {
-	defaults: {
-		ww_binding_user_doc_id: "ww_binding_user",
-	},
-	credentials: {
-		dbName: "ww_scratchpad",
-	},
-	connection: {},
+    defaults: {
+        ww_binding_user_doc_id: "ww_binding_user",
+    },
+    credentials: {
+        dbName: "ww_scratchpad",
+    },
+    connection: {},
 };
 
 cloudant_client.getDBCredentialsUrl = function(jsonData) {
@@ -133,7 +133,6 @@ cloudant_client.updateMessageDoc = function (doc) {
                         // insert annotation docs
                         console.log("---> starting to insert annotation docs...");
                         var annos = [];
-<<<<<<< HEAD
                         if (doc.annotations)
                             for (var i = 0; i < doc.annotations.length; i++) {
                                 var item = JSON.parse(doc.annotations[i]);
@@ -143,16 +142,6 @@ cloudant_client.updateMessageDoc = function (doc) {
                                 cloudant_client._fixAnnoDates(item);
                                 annos[i] = cloudant_client.updateAnnotationDoc(item);
                             }
-=======
-                        for (var i = 0; i < doc.annotations.length; i++) {
-                            var item = JSON.parse(doc.annotations[i]);
-                            item.spaceId = cloudant_client.parseDocId(doc.spaceId, 'SPC');
-                            item.msgId = cloudant_client.parseDocId(doc.id, 'MSG');
-                            // fix dates
-                            cloudant_client._fixAnnoDates(item);
-                            annos[i] = cloudant_client.updateAnnotationDoc(item);
-                        }
->>>>>>> origin/master
                         Promise.all(annos).then(results => {
                             //console.log('anno update results: ' + annos);
                             if (results.indexOf(false) < 0) {
@@ -312,7 +301,6 @@ cloudant_client.parseDocId = function (id, type) {
     return id.startsWith(prefix) ? id : prefix + id;
 };
 
-<<<<<<< HEAD
 cloudant_client.getAnnotations = function(spaceId, start, limit) {
     let skp = (start ? start : 0);
     let lst = (limit ? limit : 100);
@@ -421,6 +409,4 @@ cloudant_client.getMessagesBetween = function(spaceId, startDate, endDate, start
     });
 }
 
-=======
->>>>>>> origin/master
 module.exports = cloudant_client;

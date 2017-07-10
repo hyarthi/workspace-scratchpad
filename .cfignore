@@ -4,8 +4,5 @@ internal/
 hyarthi-scratchpad_vcap.json
 hyarthi-scratchpad_envvar.json
 certs/
-<<<<<<< HEAD
 .sublime-project
 .sublime-workspace
-=======
->>>>>>> origin/master
