@@ -46,6 +46,7 @@ if ('development' == app.get('env')) {
 
 app.get(api.space.functions.init, (request, response) => {
     api.space.init(request, response);
+<<<<<<< HEAD
 });
 
 app.get(api.space.functions.moments, (request, response) => {
@@ -56,12 +57,20 @@ app.get(api.space.functions.messages, (request, response) => {
     api.space.messages.get(request, response);
 });
 
+=======
+});
+
+>>>>>>> origin/master
 app.get('/', function (req, res) {
     res.header('Content-type', 'text/html');
     return res.end('<h1>Hello, Secure World!</h1>');
 });
 
+<<<<<<< HEAD
 app.get('/scratchpad*', routes.canvas);
+=======
+app.get('/canvas/:id', routes.canvas);
+>>>>>>> origin/master
 
 https.createServer(options, app).listen(app.get('port'), '0.0.0.0', function() {
     console.log('Express server listening on port ' + app.get('port'));
