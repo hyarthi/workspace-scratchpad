@@ -179,3 +179,13 @@ tr:hover .deleteBtn {
 .appinfo {
 	padding: 10px;
 }
+
+/*
+*/
+text.momentLabel, text.momentLabel tspan {
+	font-weight: bold;
+}
+
+text.messageLabel, text.messageLabel tspan {
+	font-weight: bold;
+}

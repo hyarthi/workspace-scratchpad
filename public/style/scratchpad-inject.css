@@ -1,0 +1,9 @@
+button.ww-sp-launch-button {
+	top: 6.6875rem !important;
+}
+
+div.ww-sp-launch-button-img {
+	background-image: url('http://localhost:3000/images/launch-icon.png') !important;
+	width: 28px !important;
+	height: 28px !important;
+}
